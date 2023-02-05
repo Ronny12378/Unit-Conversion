@@ -2,6 +2,7 @@ package com.example.unitconverter;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity
         button = findViewById(R.id.button);
 
         button.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View view) {
                 String s = editText.getText().toString();
